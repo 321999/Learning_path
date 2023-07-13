@@ -10,7 +10,7 @@ function GroupExample() {
         {/* src="holder.js/100px160" */}
         <Card.Img variant="top" src="https://images.pexels.com/photos/270404/pexels-photo-270404.jpeg?auto=compress&cs=tinysrgb&w=600" />
         <Card.Body>
-          <Card.Title>Web development by dhiraj</Card.Title>
+          <Card.Title>Web development by raj</Card.Title>
           <Card.Text>
           Web development involves the creation and maintenance of websites and web applications. Web developers use programming languages such as HTML, CSS, and JavaScript to build interactive and responsive online experiences.
           </Card.Text>
