@@ -3,6 +3,7 @@ import './App.css';
 import AllCollapseExample from './example';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import CollapsibleExample from "./example"
+import GroupExample from './frontend/listofcourse';
 // import Nav from './nav';
 import IndividualIntervalsExample from "./slidingImage"
 import Navigation from "./nav";
@@ -10,8 +11,11 @@ function App() {
   return (
     <div className="App">
       {/* nav links */}
+      {/* <GroupExample/> */}
       <Navigation/>
-      <CollapsibleExample/>
+      {/* <CollapsibleExample/> */}
+      <GroupExample/>
+
       <IndividualIntervalsExample/>
       <AllCollapseExample/>
       {/* <header className="App-header">
