@@ -1,0 +1,205 @@
+:root {
+    --primary-color: #212121;
+    --background-color: #111;
+    --font: sans-serif;
+  }
+  
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  .timeline {
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+  }
+  
+  .card {
+    position: relative;
+    width: 350px;
+    height: 240px;
+    left: 200px;
+  }
+  
+  .card:nth-child(odd) {
+    padding: 30px 0 30px 30px;
+  }
+  
+  .card:nth-child(even) {
+    padding: 30px 30px 30px 0;
+  }
+  
+  .card::before {
+    content: "";
+    position: absolute;
+    width: 107%;
+    border: solid orangered;
+  }
+  
+  .card:nth-child(odd)::before {
+    left: 0px;
+    top: -4.5px;
+    bottom: -4.5px;
+    border-width: 5px 0px 5px 5px;
+    border-radius: 50px 0 0 50px;
+  }
+  
+  .card:nth-child(even)::before {
+    right:-400px;
+    top: 0;
+    bottom: 0;
+    border-width: 5px 5px 5px 0;
+    border-radius: 0 50px 50px 0;
+  }
+  
+  .card:first-child::before {
+    border-top: 0;
+    border-top-left-radius: 0;
+  }
+  
+  .card:last-child:nth-child(odd)::before {
+    border-bottom: 0;
+    border-bottom-left-radius: 0;
+  }
+  
+  .card:last-child:nth-child(even)::before {
+    border-bottom: 0;
+    border-bottom-right-radius: 0;
+  }
+  
+  .info {
+    display: flex;
+    flex-direction: column;
+    background: #333;
+    color: rgb(255, 253, 253);
+    border-radius: 10px;
+    padding: 10px;
+  }
+  
+  .title {
+    color: orangered;
+    position: relative;
+  }
+  .title1 {
+    color: orangered;
+    position: relative;
+    background-color: aqua;
+  
+  }
+  .title2{
+    color: orangered;
+    position: relative;
+  
+  }
+  
+  .title::before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: white;
+    border-radius: 999px;
+    border: 3px solid orangered;
+    left: 329px;
+  }
+  
+  .title1::before{
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: white;
+    border-radius: 999px;
+    border: 3px solid orangered;
+    left: 237px;;
+    top: -44px;
+  }
+  .title2::after{
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: white;
+    border-radius: 999px;
+    border: 3px solid orangered;
+    left: -48px;
+    top: 6px;
+  }
+  .card:nth-child(even) > .info > .title {
+    text-align: right;
+  }
+  
+  .card:nth-child(odd) > .info > .title::before {
+    left: -44px;
+  }
+  
+  .card:nth-child(even) > .info > .title::before {
+    right: -444px;
+  }
+  
+  a:hover {
+  color: green;
+  background-color: darkgray;
+  
+  }
+  
+  
+  .content {
+    position: relative;
+    width: 350px;
+    height: 140px;
+  }
+  .content1 {
+    position: relative;
+    width: 350px;
+    height: 40px;
+  }
+  
+  
+  .card1{
+    position: relative;
+    left: -60px;
+    height: 200px;
+  }
+  .card2 {
+    position: relative;
+    left: 401px;
+    top: -200px;
+  }
+  .card3{
+    position: relative;
+    top: -5px;
+    left: 405px;
+  }
+  
+  .card4{
+    position: relative;
+    top: -87px;
+    left: 3px;
+  }
+  .card5{
+    position: relative;
+    left: -62px;
+    top: 0px;
+  }
+  
+  .card6 {
+    position: relative;
+    left: 401px;
+    top: -86px;
+  }
+  .card7
+  {
+    position: relative;
+    top: -5px;
+    left: 405px;
+  }
+  
+  .card8{
+    position: relative;
+    top: -80px;
+    left: 3px;
+  }
+  
+
+
