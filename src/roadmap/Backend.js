@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import "../Style/Frontend.css";
+import '../Style/Backend.css'
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import PopupPage from './PopupPage';
 
 
-const Frontend = () => {
+const Backend = () => {
     const [showPopup, setShowPopup] = useState(false);
   
     const togglePopup = () => {
@@ -13,8 +13,8 @@ const Frontend = () => {
   return (
     <div>
          <div className="timeline1 mx-auto px-60 sm:px-70 bg-blue-100 py-8">  
-           <h1 className="text-2xl mb-0.5 font-bold sm:mb-2 sm:text-4xl">Frontend Developer </h1>
-           <p className="text-sm text-gray-500 sm:text-lg">Step by step guide to becoming a modern frontend developer in 2023</p>
+           <h1 className="text-2xl mb-0.5 font-bold sm:mb-2 sm:text-4xl">Back-end Developer </h1>
+           <p className="text-sm text-gray-500 sm:text-lg">Step by step guide to becoming a modern Back-end developer in 2023</p>
   </div> 
   <hr/>
       <div className="timeline">
@@ -148,4 +148,5 @@ const Frontend = () => {
   );
 }
 
-export default Frontend;
+
+export default Backend
