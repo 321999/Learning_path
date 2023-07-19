@@ -35,42 +35,42 @@ const SkillBased = () => {
         <div className='w-full hover:bg-gray-200 shadow-2xl flex flex-col p-4 my-8 rounded-lg hover:scale-105 duration-300'>
         <img className='w-30 mx-auto mt-[-3rem]' src={img1} alt="/" />
         <h2 className='text-2xl font-bold text-center py-8'>Javascript</h2>
-        <button className='bg-black text-[#00df9a] w-[100px] rounded-md font-medium my-6 mx-auto px-6 py-3'>Start</button>
+        <button className='bg-black text-[#00df9a] w-[150px] hover:text-gray-100 shadow-2xl rounded-md font-medium my-8 mx-auto px-6 py-3'>Start</button>
         </div>
         </SwiperSlide>
         <SwiperSlide> 
         <div className='w-full hover:bg-gray-200 shadow-2xl flex flex-col p-4 my-8 rounded-lg hover:scale-105 duration-300'>
         <img className='w-30 mx-auto mt-[-3rem]' src={img2} alt="/" />
         <h2 className='text-2xl font-bold text-center py-8'>React</h2>
-        <button className='bg-black text-[#00df9a] w-[100px] rounded-md font-medium my-6 mx-auto px-6 py-3'>Start</button>
+        <button className='bg-black text-[#00df9a] w-[150px] hover:text-gray-100 shadow-2xl rounded-md font-medium my-6 mx-auto px-6 py-3'>Start</button>
         </div>
         </SwiperSlide>
         <SwiperSlide> 
         <div className='w-full hover:bg-gray-200 shadow-2xl flex flex-col p-4 my-8 rounded-lg hover:scale-105 duration-300'>
         <img className='w-30 mx-auto mt-[-3rem]' src={img3} alt="/" />
         <h2 className='text-2xl font-bold text-center py-8'>SQL</h2>
-        <button className='bg-black text-[#00df9a] w-[100px] rounded-md font-medium my-6 mx-auto px-6 py-3'>Start</button>
+        <button className='bg-black text-[#00df9a] w-[150px] hover:text-gray-100 shadow-2xl rounded-md font-medium my-6 mx-auto px-6 py-3'>Start</button>
         </div>
         </SwiperSlide>
         <SwiperSlide> 
         <div className='w-full hover:bg-gray-200 shadow-2xl flex flex-col p-4 my-8 rounded-lg hover:scale-105 duration-300'>
         <img className='w-30 mx-auto mt-[-3rem]' src={img4} alt="/" />
         <h2 className='text-2xl font-bold text-center py-8'>Typescript</h2>
-        <button className='bg-black text-[#00df9a] w-[100px] rounded-md font-medium my-6 mx-auto px-6 py-3'>Start</button>
+        <button className='bg-black text-[#00df9a] w-[150px] hover:text-gray-100 shadow-2xl rounded-md font-medium my-6 mx-auto px-6 py-3'>Start</button>
         </div>
         </SwiperSlide>
         <SwiperSlide> 
         <div className='w-full hover:bg-gray-200 shadow-2xl flex flex-col p-4 my-8 rounded-lg hover:scale-105 duration-300'>
         <img className='w-30 mx-auto mt-[-3rem]' src={img5} alt="/" />
         <h2 className='text-2xl font-bold text-center py-8'>Node Js</h2>
-        <button className='bg-black text-[#00df9a] w-[100px] rounded-md font-medium my-6 mx-auto px-6 py-3'>Start</button>
+        <button className='bg-black text-[#00df9a] w-[150px] hover:text-gray-100 shadow-2xl rounded-md font-medium my-6 mx-auto px-6 py-3'>Start</button>
         </div>
         </SwiperSlide>
         <SwiperSlide> 
         <div className='w-full hover:bg-gray-200 shadow-2xl flex flex-col p-4 my-8 rounded-lg hover:scale-105 duration-300'>
         <img className='w-30 mx-auto mt-[-3rem]' src={img6} alt="/" />
         <h2 className='text-2xl font-bold text-center py-8'>MogoDB</h2>
-        <button className='bg-black text-[#00df9a] w-[100px] rounded-md font-medium my-6 mx-auto px-6 py-3'>Start</button>
+        <button className='bg-black text-[#00df9a] w-[150px] hover:text-gray-100 shadow-2xl rounded-md font-medium my-6 mx-auto px-6 py-3'>Start</button>
         </div>
         </SwiperSlide>
         </Swiper>

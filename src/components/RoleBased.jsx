@@ -32,7 +32,7 @@ const RoleBased = () => {
        <div className='w-full hover:bg-gray-200 shadow-2xl flex flex-col p-4 my-8 rounded-lg hover:scale-105 duration-300'>
        <img className='w-30 mx-auto mt-[-3rem]' src={Single} alt="/" />
        <h2 className='text-2xl font-bold text-center py-8'>Front-End</h2>
-       <button className='bg-black text-[#00df9a] w-[100px] rounded-md font-medium my-6 mx-auto px-6 py-3'>Start</button>
+       <button className='bg-black text-[#00df9a] w-[150px] hover:text-gray-100 shadow-2xl rounded-md font-medium my-4 mx-auto px-6 py-3'>Start</button>
        </div>
     </SwiperSlide>
 
@@ -41,35 +41,35 @@ const RoleBased = () => {
     <div className='w-full  hover:bg-gray-100 shadow-2xl flex flex-col p-4 my-4 rounded-lg hover:scale-105 duration-300'>
       <img className='w-30 mx-auto mt-[-3rem]' src={Double} alt="/" />
       <h2 className='text-2xl font-bold text-center py-8'>Back-End</h2>
-      <button className='bg-black text-[#00df9a] w-[100px] rounded-md font-medium my-6 mx-auto px-6 py-3'>Start</button>
+      <button className='bg-black text-[#00df9a] w-[150px] hover:text-gray-100 shadow-2xl rounded-md font-medium my-6 mx-auto px-6 py-3'>Start</button>
     </div>
       </SwiperSlide>
     <SwiperSlide> 
     <div className='w-full  hover:bg-gray-100 shadow-2xl flex flex-col p-4 my-4 rounded-lg hover:scale-105 duration-300'>
       <img className='w-30 mx-auto mt-[-3rem]' src={Triple} alt="/" />
       <h2 className='text-2xl font-bold text-center py-8'>Full-Stack</h2>
-      <button className='bg-black text-[#00df9a] w-[100px] rounded-md font-medium my-6 mx-auto px-6 py-3'>Start</button>
+      <button className='bg-black text-[#00df9a] w-[150px] hover:text-gray-100 shadow-2xl rounded-md font-medium my-6 mx-auto px-6 py-3'>Start</button>
     </div>
       </SwiperSlide>
     <SwiperSlide> 
-    <div className='w-full  hover:bg-gray-100 shadow-2xl flex flex-col p-4 my-4 rounded-lg hover:scale-105 duration-300'>
+    <div className='w-full  hover:bg-gray-100 shadow-2xl flex flex-col p-3 my-3 rounded-lg hover:scale-105 duration-300'>
       <img className='w-30 mx-auto mt-[-3rem]' src={Four} alt="/" />
       <h2 className='text-2xl font-bold text-center py-8'>Data-Analysis</h2>
-      <button className='bg-black text-[#00df9a] w-[100px] rounded-md font-medium my-6 mx-auto px-6 py-3'>Start</button>
+      <button className='bg-black text-[#00df9a] w-[150px] hover:text-gray-100 shadow-2xl rounded-md font-medium my-6 mx-auto px-6 py-3'>Start</button>
     </div>
       </SwiperSlide>
     <SwiperSlide> 
-    <div className='w-full  hover:bg-gray-100 shadow-2xl flex flex-col p-4 my-4 rounded-lg hover:scale-105 duration-300'>
+    <div className='w-full  hover:bg-gray-100 shadow-2xl flex flex-col p-3 my-3 rounded-lg hover:scale-105 duration-300'>
       <img className='w-30 mx-auto mt-[-3rem]' src={five} alt="/" />
       <h2 className='text-2xl font-bold text-center py-8'>Data-Science</h2>
-      <button className='bg-black text-[#00df9a] w-[100px] rounded-md font-medium my-6 mx-auto px-6 py-3'>Start</button>
+      <button className='bg-black text-[#00df9a] w-[150px] hover:text-gray-100 shadow-2xl rounded-md font-medium my-6 mx-auto px-6 py-3'>Start</button>
     </div>
       </SwiperSlide>
     <SwiperSlide> 
-    <div className='w-full  hover:bg-gray-100 shadow-2xl flex flex-col p-4 my-4 rounded-lg hover:scale-105 duration-300'>
+    <div className='w-full  hover:bg-gray-100 shadow-2xl flex flex-col p-3 my-3 rounded-lg hover:scale-105 duration-300'>
       <img className='w-30 mx-auto mt-[-3rem]' src={six} alt="/" />
       <h2 className='text-2xl font-bold text-center py-8'>Machine-Learning</h2>
-      <button className='bg-black text-[#00df9a] w-[100px] rounded-md font-medium my-6 mx-auto px-6 py-3'>Start</button>
+      <button className='bg-black text-[#00df9a] w-[150px] hover:text-gray-100 shadow-2xl rounded-md font-medium my-6 mx-auto px-6 py-3'>Start</button>
     </div>
       </SwiperSlide>
   </Swiper>
