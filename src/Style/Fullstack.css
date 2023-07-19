@@ -1,0 +1,504 @@
+:root {
+    --primary-color: #212121;
+    --background-color: #111;
+    --font: sans-serif;
+  }
+  
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  .timeline {
+    background-color: #cac7c7a1;
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+  }
+  
+  .card {
+    position: relative;
+    width: 350px;
+    height: 240px;
+    left: 200px;
+  }
+  
+  .card:nth-child(odd) {
+    padding: 30px 0 30px 30px;
+  }
+  
+  .card:nth-child(even) {
+    padding: 30px 30px 30px 0;
+  }
+  
+  .card::before {
+    content: "";
+    position: absolute;
+    width: 107%;
+    border: solid orangered;
+  }
+  
+  .card:nth-child(odd)::before {
+    left: 0px;
+    top: -4.5px;
+    bottom: -4.5px;
+    border-width: 5px 0px 5px 5px;
+    border-radius: 50px 0 0 50px;
+  }
+  
+  .card:nth-child(even)::before {
+    right:-400px;
+    top: 0;
+    bottom: 0;
+    border-width: 5px 5px 5px 0;
+    border-radius: 0 50px 50px 0;
+  }
+  
+  .card:first-child::before {
+    border-top: 0;
+    border-top-left-radius: 0;
+  }
+  
+  .card:last-child:nth-child(odd)::before {
+    border-bottom: 0;
+    border-bottom-left-radius: 0;
+  }
+  
+  .card:last-child:nth-child(even)::before {
+    border-bottom: 0;
+    border-bottom-right-radius: 0;
+  }
+  
+  .info {
+    display: flex;
+    flex-direction: column;
+    background: #333;
+    color: rgb(255, 253, 253);
+    border-radius: 10px;
+    padding: 10px;
+  }
+  
+  .title {
+    color: orangered;
+    position: relative;
+  }
+  .title1 {
+    color: orangered;
+    position: relative;
+    background-color: aqua;
+  
+  }
+  .title2{
+    color: orangered;
+    position: relative;
+  
+  }
+  
+  .title::before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: white;
+    border-radius: 999px;
+    border: 3px solid orangered;
+    left: 329px;
+  }
+  
+  .title1::before{
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: white;
+    border-radius: 999px;
+    border: 3px solid orangered;
+    left: 237px;;
+    top: -44px;
+  }
+  .title2::after{
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: white;
+    border-radius: 999px;
+    border: 3px solid orangered;
+    left: -48px;
+    top: 6px;
+  }
+  .card:nth-child(even) > .info > .title {
+    text-align: right;
+  }
+  
+  .card:nth-child(odd) > .info > .title::before {
+    left: -44px;
+  }
+  
+  .card:nth-child(even) > .info > .title::before {
+    right: -444px;
+  }
+  
+  a:hover {
+  color: green;
+  background-color: darkgray;
+  
+  }
+  
+
+  .card--0{
+    position: relative;
+    top: 83px;
+    left: -83px;
+    width: 133px;
+  }
+
+  .card0{
+    position: relative;
+    top: 143px;
+    left: 54px;
+    width: 111px;
+    
+  }
+
+  .card-0{
+    position: relative;
+    top: 98px;
+    left: 248px;
+    width: 96px
+  }
+
+  .card-1{
+    position: relative;
+    top: -15px;
+    left: 656px;
+    width: 159px;
+  }
+  .card-3{
+    position: relative;
+    top: 46px;
+    left: 258px;
+    width: 278px;
+  }
+  .card-4{
+    position: relative;
+    top: 15px;
+    left: 258px;
+    width: 278px;
+  }
+
+  .card-5{
+    position: relative;
+    top: 15px;
+    left: 580px;
+    width: 104px;
+  }
+
+  .card-6{
+    position: relative;
+    top: 41px;
+    left: 260px;
+    width: 278px;
+  }
+  .card-7{
+    position: relative;
+    top: -59px;
+    left: 42px;
+    width: 157px;
+  }
+  .card-8{
+    position: relative;
+    top: 10px;
+    left: -115px;
+    width: 158px;
+  }
+  .card-9{
+    position: relative;
+    top: 27px;
+    left: 130px;
+    width: 278px;
+  }
+
+  .card-10{
+    position: relative;
+    top: 38px;
+    left: 86px;
+    width: 158px;
+  }
+
+  .card-11{
+    position: relative;
+    top: 18px;
+    left: 342px;
+    width: 278px;
+  }
+
+  .card-12{
+    position: relative;
+    top: 30px;
+    left: 667px;
+    width: 150px;
+  }
+
+  .card-13{
+    position: relative;
+    top: 78px;
+    left: 530px;
+    width: 139px;
+}
+
+.card-14{
+    position: relative;
+    top: 111px;
+    left: 379px;
+    width: 275px;
+}
+.card-15{
+    position: relative;
+    top: -54px;
+    left: 98px;
+    width: 158px;
+}
+.card-16{
+    position: relative;
+    top: -24px;
+    left: 28px;
+    width: 275px;
+}
+
+.card-17{
+    position: relative;
+    top: 0px;
+    left: -104px;
+    width: 146px;
+}
+.card-18{
+    position: relative;
+    top: -51px;
+    left: 68px;
+    width: 150px;
+}
+.card-19{
+    position: relative;
+    top: -21px;
+    left: 191px;
+    width: 275px;
+}
+.card-20{
+    position: relative;
+    top: -156px;
+    left: 479px;
+    width: 163px;
+}
+.card-21{
+    position: relative;
+    top: -101px;
+    left: 667px;
+    width: 150px;
+}
+.card-22{
+    position: relative;
+    top: -56px;
+    left: 341px;
+    width: 275px;
+}
+
+
+  .title-1::before{
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: white;
+    border-radius: 999px;
+    border: 3px solid orangered;
+    left: 237px;
+    top: -81px;
+  }
+  .title-2::before{
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: white;
+    border-radius: 999px;
+    border: 3px solid orangered;
+    left: 483px;
+    top: 16px;
+  }
+  .title-3::before{
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: white;
+    border-radius: 999px;
+    border: 3px solid orangered;
+    left: 235px;
+    top: -51px;
+  }
+
+  .title-4::before{
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: white;
+    border-radius: 999px;
+    border: 3px solid orangered;
+    left: -164px;
+    top: 15px;
+  }
+
+  .title-5::before{
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: white;
+    border-radius: 999px;
+    border: 3px solid orangered;
+    left: 59px;
+    top: -52px;
+}
+
+.title-6::before{
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: white;
+    border-radius: 999px;
+    border: 3px solid orangered;
+    left: 59px;
+    top: -62px;
+}
+.title-7::before{
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: white;
+    border-radius: 999px;
+    border: 3px solid orangered;
+    left: -63px;
+    top: 15px;
+}
+.title-8::before{
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: white;
+    border-radius: 999px;
+    border: 3px solid orangered;
+    left: 176px;
+    top: -60px;
+}
+
+.title-9::before{
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: white;
+    border-radius: 999px;
+    border: 3px solid orangered;
+    left: 400px;
+    top: 15px;
+}
+
+  .line {
+    width: 66px;
+    height: 13px;
+    border-top: 4px dashed orangered;
+    border-radius: -219px;
+    transform: rotate(90deg);
+    position: relative;
+    top: -42px;
+    left: 465px;
+}
+
+.line-1 {
+    width: 207px;
+    height: 13px;
+    border-top: 4px dashed orangered;
+    border-radius: -219px;
+    transform: rotate(0deg);
+    position: relative;
+    top: -9px;
+    left: 536px;
+}
+
+.line-2 {
+    width: 40px;
+    height: 13px;
+    border-top: 4px dashed orangered;
+    border-radius: -219px;
+    transform: rotate(90deg);
+    position: relative;
+    top: -29px;
+    left: 478px;
+}
+
+.line-3 {
+    width: 150px;
+    height: 13px;
+    border-top: 4px dashed orangered;
+    border-radius: -219px;
+    transform: rotate(0deg);
+    position: relative;
+    top: 0px;
+    left: -21px;
+}
+  
+.line-4 {
+    width: 40px;
+    height: 13px;
+    border-top: 4px dashed orangered;
+    border-radius: -219px;
+    transform: rotate(90deg);
+    position: relative;
+    top: -54px;
+    left: 384px;
+}
+
+.line-5 {
+    width: 47px;
+    height: 13px;
+    border-top: 4px dashed orangered;
+    border-radius: -219px;
+    transform: rotate(90deg);
+    position: relative;
+    top: 35px;
+    left: 418px;
+}
+.line-6 {
+    width: 47px;
+    height: 13px;
+    border-top: 4px dashed orangered;
+    border-radius: -219px;
+    transform: rotate(0deg);
+    position: relative;
+    top: -48px;
+    left: -20px;
+}
+.line-7{
+    width: 47px;
+    height: 13px;
+    border-top: 4px dashed orangered;
+    border-radius: -219px;
+    transform: rotate(90deg);
+    position: relative;
+    top: -98px;
+    left: 347px;
+}
+.line-8{
+    width: 127px;
+    height: 13px;
+    border-top: 4px dashed orangered;
+    border-radius: -219px;
+    transform: rotate(0deg);
+    position: relative;
+    top: -81px;
+    left: 617px;
+}
