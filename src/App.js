@@ -18,9 +18,6 @@ function App() {
        <SkillBased/> 
        <Footer/>
        {/* <Cards/>
-       
-      
-       
      */}
     </div>
     
