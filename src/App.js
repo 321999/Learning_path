@@ -6,6 +6,7 @@ import Navbar from './components/Navbar';
 import Newsletter from './components/Newsletter';
 import RoleBased from './components/RoleBased';
 import SkillBased from './components/SkillBased';
+import Login from './components/Login';
 
 
 function App() {
@@ -17,7 +18,9 @@ function App() {
        <Newsletter/>
        <SkillBased/> 
        <Footer/>
-      
+       <Login/>
+       {/* <Cards/>
+     */}
     </div>
     
   );
