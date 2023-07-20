@@ -17,8 +17,7 @@ function App() {
        <Newsletter/>
        <SkillBased/> 
        <Footer/>
-       {/* <Cards/>
-     */}
+      
     </div>
     
   );
