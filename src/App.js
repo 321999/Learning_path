@@ -18,7 +18,7 @@ function App() {
        <Newsletter/>
        <SkillBased/> 
        <Footer/>
-       <Login/>
+       {/* <Login/> */}
        {/* <Cards/>
      */}
     </div>
