@@ -1,0 +1,563 @@
+:root {
+    --primary-color: #212121;
+    --background-color: #111;
+    --font: sans-serif;
+  }
+  
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  .timeline {
+    background-color: #cac7c7a1;
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+  }
+  
+  h6{
+    font-size: 10px;
+  }
+  .card {
+    position: relative;
+    width: 350px;
+    height: 240px;
+    left: 200px;
+  }
+  
+  .card:nth-child(odd) {
+    padding: 30px 0 30px 30px;
+  }
+  
+  .card:nth-child(even) {
+    padding: 30px 30px 30px 0;
+  }
+  
+  .card::before {
+    content: "";
+    position: absolute;
+    width: 107%;
+    border: solid orangered;
+  }
+  
+  .card:nth-child(odd)::before {
+    left: 0px;
+    top: -4.5px;
+    bottom: -4.5px;
+    border-width: 5px 0px 5px 5px;
+    border-radius: 50px 0 0 50px;
+  }
+  
+  .card:nth-child(even)::before {
+    right:-400px;
+    top: 0;
+    bottom: 0;
+    border-width: 5px 5px 5px 0;
+    border-radius: 0 50px 50px 0;
+  }
+  
+  .card:first-child::before {
+    border-top: 0;
+    border-top-left-radius: 0;
+  }
+  
+  .card:last-child:nth-child(odd)::before {
+    border-bottom: 0;
+    border-bottom-left-radius: 0;
+  }
+  
+  .card:last-child:nth-child(even)::before {
+    border-bottom: 0;
+    border-bottom-right-radius: 0;
+  }
+  
+  .info {
+    display: flex;
+    flex-direction: column;
+    background: #333;
+    color: rgb(255, 253, 253);
+    border-radius: 10px;
+    padding: 10px;
+  }
+  
+  .title {
+    color: orangered;
+    position: relative;
+  }
+  .title1 {
+    color: orangered;
+    position: relative;
+    background-color: aqua;
+  
+  }
+  .title2{
+    color: orangered;
+    position: relative;
+  
+  }
+  
+  .title::before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: white;
+    border-radius: 999px;
+    border: 3px solid orangered;
+    left: 329px;
+  }
+  
+  .title1::before{
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: white;
+    border-radius: 999px;
+    border: 3px solid orangered;
+    left: 237px;;
+    top: -44px;
+  }
+  .title2::after{
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: white;
+    border-radius: 999px;
+    border: 3px solid orangered;
+    left: -48px;
+    top: 6px;
+  }
+  .card:nth-child(even) > .info > .title {
+    text-align: right;
+  }
+  
+  .card:nth-child(odd) > .info > .title::before {
+    left: -44px;
+  }
+  
+  .card:nth-child(even) > .info > .title::before {
+    right: -444px;
+  }
+  
+  a:hover {
+  color: green;
+  background-color: darkgray;
+  
+  }
+  
+
+  .dcard1{
+    position: relative;
+    top: 83px;
+    left: -83px;
+    width: 133px;
+  }
+
+  .dcard2{
+    position: relative;
+    top: -123px;
+    left: 132px;
+    width: 126px;
+    
+  }
+
+  .dcard3{
+    position: relative;
+    top: -169px;
+    left: 305px;
+    width: 126px;
+}
+  
+  .dcard4{
+    position: relative;
+    top: -68px;
+    left: 147px;
+    width: 104px;
+  }
+  .dcard5{
+    position: relative;
+    top: -21px;
+    top: -113px;
+    left: 323px;
+    width: 96px;
+  }
+
+  .dcard6{
+    position: relative;
+    top: -253px;
+    left: 114px;
+    width: 308px;
+}
+  
+
+   .dcard7{
+    position: relative;
+    top: -298px;
+    left: 493px;
+    width: 201px;
+  }
+  .dcard8{
+    position: relative;
+    top: -260px;
+    left: 463px;
+    width: 105px;
+  }
+  .dcard9{
+    position: relative;
+    top: -314px;
+    left: 620px;
+    width: 100px;
+  }
+  .dcard10{
+    position: relative;
+    top: -302px;
+    left: 528px;
+    width: 138px;
+  }
+
+  .dcard11{
+    position: relative;
+    top: -59px;
+    left: 342px;
+    width: 335px;
+}
+.dcard12{
+  position: relative;
+  top: -52px;
+  left: 351px;
+  width: 108px;
+}
+.dcard13{
+  position: relative;
+  top: -100px;
+  left: 556px;
+  width: 97px;
+}
+.dcard14{
+  position: relative;
+  top: -62px;
+  left: 346px;
+  width: 115px;
+}
+.dcard15{
+  position: relative;
+  top: -110px;
+  left: 557px;
+  width: 92px;
+}
+.dcard16{
+  position: relative;
+    top: -312px;
+    left: 99px;
+    width: 145px;
+}
+.dcard17{
+  position: relative;
+  top: -291px;
+  left: 123px;
+  width: 97px;
+}
+.dcard18{
+  position: relative;
+  top: -265px;
+  left: 115px;
+  width: 117px;
+}
+.dcard19{
+  position: relative;
+  top: -350px;
+  left: -180px;
+  width: 273px;
+}
+.dcard20{
+  position: relative;
+  top: -261px;
+  left: 33px;
+  width: 285px;
+}
+.dcard21{
+  position: relative;
+  top: -51px;
+  left: 410px;
+  width: 253px;
+}
+.dcard22{
+  position: relative;
+  top: 30px;
+  left: 667px;
+  width: 158px;
+  transform: rotate(90deg);
+}
+.dcard23{
+  position: relative;
+  top: -68px;
+  left: 547px;
+  width: 120px;
+}
+.dcard24{
+  position: relative;
+  top: -73px;
+  left: 401px;
+  width: 116px;
+}
+
+.dcard25{
+  position: relative;
+    top: -83px;
+    left: 536px;
+    width: 136px;
+}
+.dcard26{
+  position: relative;
+    top: -57px;
+    left: 425px;
+    width: 244px;
+}
+.dcard27{
+  position: relative;
+  top: -32px;
+  left: 292px;
+  width: 170px;
+}
+.dcard28{
+  position: relative;
+  top: -78px;
+  left: 484px;
+  width: 131px;
+}
+.dcard29{
+  position: relative;
+  top: -123px;
+  left: 629px;
+  width: 180px;
+}
+.dcard30{
+  position: relative;
+  top: -271px;
+  left: 8px;
+  width: 265px;
+}
+  
+.dcard31{
+  position: relative;
+  top: -248px;
+  left: -19px;
+  width: 157px;
+}
+  
+.dcard32{
+  position: relative;
+    top: -293px;
+    left: 149px;
+    width: 121px;
+}
+.dcard33{
+  position: relative;
+  top: -272px;
+  left: -96px;
+  width: 186px;
+}
+.dcard34{
+  position: relative;
+  top: -319px;
+  left: 146px;
+  width: 101px;
+}
+.dcard35{
+  position: relative;
+    top: -283px;
+    left: 54px;
+    width: 111px;
+}
+  
+  
+
+.dline1 {
+  width: 111px;
+    height: 10px;
+    border-top: 4px dashed orangered;
+    border-radius: -219px;
+    transform: rotate(90deg);
+    position: relative;
+    top: -118px;
+    left: 135px;
+}
+  
+.dline2 {
+  width: 111px;
+  height: 10px;
+  border-top: 4px dashed orangered;
+  border-radius: -219px;
+  transform: rotate(90deg);
+  position: relative;
+  top: -222px;
+  left: 304px;
+}
+
+.dline3 {
+  width: 39px;
+  height: 10px;
+  border-top: 4px dashed orangered;
+  border-radius: -219px;
+  transform: rotate(90deg);
+  position: relative;
+  top: -330px;
+  left: 510px;
+}
+
+  
+.dline4 {
+  width: 40px;
+  height: 10px;
+  border-top: 4px dashed orangered;
+  border-radius: -219px;
+  transform: rotate(90deg);
+  position: relative;
+  top: -385px;
+  left: 642px;
+}
+.dline5 {
+  width: 106px;
+  height: 10px;
+  border-top: 4px dashed orangered;
+  border-radius: -219px;
+  transform: rotate(90deg);
+  position: relative;
+  top: -407px;
+  left: 540px;
+}
+.dline6 {
+  width: 124px;
+    height: 10px;
+    border-top: 4px dashed orangered;
+    border-radius: -219px;
+    transform: rotate(90deg);
+    position: relative;
+    top: -3px;
+    left: 342px;
+}
+.dline7 {
+  width: 123px;
+  height: 14px;
+  border-top: 4px dashed orangered;
+  border-radius: -219px;
+  transform: rotate(90deg);
+  position: relative;
+  top: -15px;
+  left: 538px;
+}
+.dline8 {
+  width: 114px;
+  height: 10px;
+  border-top: 4px dashed orangered;
+  border-radius: -219px;
+  transform: rotate(90deg);
+  position: relative;
+  top: -261px;
+  left: 109px;
+}
+.dline9 {
+  width: 57px;
+  height: 40px;
+  border-top: 4px dashed orangered;
+  border-radius: -219px;
+  transform: rotate(0deg);
+  position: relative;
+  top: -179px;
+  left: 667px;
+}
+.dline10 {
+  width: 207px;
+  height: 10px;
+  border-top: 4px dashed orangered;
+  border-radius: -219px;
+  transform: rotate(0deg);
+  position: relative;
+  top: -188px;
+  left: 517px;
+}
+.dline11 {
+  width: 53px;
+  height: 10px;
+  border-top: 4px dashed orangered;
+  border-radius: -219px;
+  transform: rotate(0deg);
+  position: relative;
+  top: -159px;
+  left: 671px;
+}
+
+
+.dline12 {
+  width: 26px;
+  height: 10px;
+  border-top: 4px dashed orangered;
+  border-radius: -219px;
+  transform: rotate(90deg);
+  position: relative;
+  top: -187px;
+  left: 433px;
+}
+.dline13 {
+  width: 26px;
+  height: 10px;
+  border-top: 4px dashed orangered;
+  border-radius: -219px;
+  transform: rotate(90deg);
+  position: relative;
+  top: -197px;
+  left: 535px;
+}
+.dline14 {
+  width: 26px;
+  height: 10px;
+  border-top: 4px dashed orangered;
+  border-radius: -219px;
+  transform: rotate(90deg);
+  position: relative;
+  top: -207px;
+  left: 641px;
+}
+.dline15 {
+  width: 24px;
+  height: 10px;
+  border-top: 4px dashed orangered;
+  border-radius: -219px;
+  transform: rotate(90deg);
+  position: relative;
+  top: -356px;
+  left: 42px;
+}
+.dline16 {
+  width: 23px;
+  height: 10px;
+  border-top: 4px dashed orangered;
+  border-radius: -219px;
+  transform: rotate(90deg);
+  position: relative;
+  top: -366px;
+  left: 194px;
+}
+.dline17 {
+  width: 56px;
+  height: 10px;
+  border-top: 4px dashed orangered;
+  border-radius: -219px;
+  transform: rotate(0deg);
+  position: relative;
+  top: -389px;
+  left: 90px;
+}
+.dline18 {
+  width: 31px;
+  height: 10px;
+  border-top: 4px dashed orangered;
+  border-radius: -219px;
+  transform: rotate(90deg);
+  position: relative;
+  top: -362px;
+  left: 55px;
+
+}
