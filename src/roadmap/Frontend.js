@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import "../Style/Frontend.css";
+import "../Styl/Frontend.css";
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import PopupPage from './PopupPage';
 
