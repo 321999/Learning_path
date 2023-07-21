@@ -1,14 +1,20 @@
 import React, { useState } from 'react';
-import "../Styl/Frontend.css";
+import "../Style/Frontend.css";
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import PopupPage from './PopupPage';
-
+import topicsInfo from '../data/topicsInfo.json';
 
 const Frontend = () => {
-    const [showPopup, setShowPopup] = useState(false);
+     const [selectedTopic, setSelectedTopic] = useState(null);
+    const [isPopupOpen, setIsPopupOpen] = useState(false);
   
-    const togglePopup = () => {
-      setShowPopup(!showPopup);
+    const showInfo = (topicName) => {
+      setSelectedTopic(topicsInfo[topicName]);
+      setIsPopupOpen(true); // Set isPopupOpen to true to open the popup
+    };
+  
+    const handleCloseTopic = () => {
+      setIsPopupOpen(false); // Set isPopupOpen to false to close the popup
     };
   return (
     <div>
@@ -21,10 +27,7 @@ const Frontend = () => {
         <div className="outer">
           <div className="card">
             <div className="info">
-            <h3 className="title font-bold">
-                <a href="#" onClick={togglePopup}>
-                  INTERNET
-                </a> <span style={{color:'green'}}><CheckCircleIcon/></span></h3> 
+            <button className="title font-bold" onClick={() => showInfo('internet')} >Internet<span style={{ color: 'green', padding: '10px' }}><CheckCircleIcon /> </span> </button>        
              <div className='content'>
              <div class="inline-content"><a href="#">How does the Internet work?</a></div>               
               <div><a href='#'>What is HTTP?</a></div>
@@ -36,19 +39,17 @@ const Frontend = () => {
           </div>
          
           <div className="card">
-          <div  className='card1'>
+            <div  className='card1'>
             <div className="info">
-              <h3 className="title1 font-bold"><a href='#'>Project0</a><span style={{color:'green', padding:'10px'}}><CheckCircleIcon/></span></h3>
-              <div className='content1'>
-              <div><a href='#'>How does the Internet work?</a></div>
-              <div><a href='#'>What is HTTP?</a></div>
-             </div>
-            </div>
-            </div>
-
-            <div  className='card2'>
-            <div className="info">
-              <h3 className="title font-bold"><a href='#'>HTML</a><span style={{color:'green', padding:'10px'}}><CheckCircleIcon/></span></h3>
+              <button
+                  className="title font-bold"
+                  onClick={() => showInfo('html')}
+                >
+                  HTML
+                  <span style={{ color: 'green', padding: '10px' }}>
+                    <CheckCircleIcon />
+                  </span>
+                </button>   
               <div className='content'>
               <div><a href='#'>Learn the basics</a></div>
               <div><a href='#'>Forms and Validations</a></div>
@@ -61,19 +62,9 @@ const Frontend = () => {
           </div>
         
           <div className="card">
-          <div  className='card3'>
-            <div className="info"> 
-              <h3 className="title1 font-bold"><a href='#'>Project1</a><span style={{color:'green', padding:'10px'}}><CheckCircleIcon/></span></h3>
-              <div className='content1'>
-              <div><a href='#'>How does the Internet work?</a></div>
-              <div><a href='#'>What is HTTP?</a></div>
-             </div>
-            </div>
-            </div>
-
-          <div className="card4">
+          <div className="card2">
             <div className="info">
-            <h3 className="title2 font-bold"><a href='#'>CSS</a><span style={{color:'green', padding:'10px'}}><CheckCircleIcon/></span></h3>
+            <button className="title2 font-bold" onClick={() => showInfo('css')} >CSS<span style={{ color: 'green', padding: '10px' }}><CheckCircleIcon /> </span> </button>        
             <div className='content'>
               <div><a href='#'>Learn the basics</a></div>
               <div><a href='#'>Making Layouts</a></div>
@@ -85,21 +76,16 @@ const Frontend = () => {
             </div>
           </div>
 
-         
 
           <div className="card">
-          <div  className='card5'>
+          <div  className='card3'>
             <div className="info"> 
-              <h3 className="title1 font-bold"><a href='#'>Project2</a><span style={{color:'green', padding:'10px'}}><CheckCircleIcon/></span></h3>
-              <div className='content1'>
-              <div><a href='#'>How does the Internet work?</a></div>
-              <div><a href='#'>What is HTTP?</a></div>
-             </div>
+            <button className="title1 font-bold" onClick={() => showInfo('project1')} >Project1<span style={{ color: 'green', padding: '10px' }}><CheckCircleIcon /></span></button>        
             </div>
             </div>
-          <div  className='card6'>
+          <div  className='card4'>
             <div className="info">
-            <h3 className="title font-bold"><a href='#'>JAVASCRIPT</a><span style={{color:'green', padding:'10px'}}><CheckCircleIcon/></span></h3>
+            <button className="title font-bold" onClick={() => showInfo('js')} >JavaScript<span style={{ color: 'green', padding: '10px' }}><CheckCircleIcon /> </span> </button>        
             <div className='content'>
               <div><a href='#'>Syntax and Basic Constructs</a></div>
               <div><a href='#'>Learn DOM Manipulation</a></div>
@@ -112,23 +98,18 @@ const Frontend = () => {
             </div>
           </div>
 
-          
-
 
           <div className="card">
-          <div  className='card7'>
+          <div  className='card5'>
             <div className="info"> 
-              <h3 className="title1 font-bold"><a href='#'>Project3</a><span style={{color:'green', padding:'10px'}}><CheckCircleIcon/></span></h3>
-              <div className='content1'>
-              <div><a href='#'>How does the Internet work?</a></div>
-              <div><a href='#'>What is HTTP?</a></div>
-             </div>
+            <button className="title1 font-bold" onClick={() => showInfo('project2')} >Project2<span style={{ color: 'green', padding: '10px' }}><CheckCircleIcon /> </span></button>        
+        
             </div>
             </div>
 
-          <div className="card8">
+          <div className="card6">
             <div className="info">
-              <h3 className="title2 font-bold"><a href='#'>BOOTSTRAP</a><span style={{color:'green', padding:'10px'}}><CheckCircleIcon/></span></h3>
+            <button className="title2 font-bold" onClick={() => showInfo('bootstrap')} >Bootstrap<span style={{ color: 'green', padding: '10px' }}><CheckCircleIcon /> </span> </button>        
               <div className='content'>
               <div><a href='#'>What is Bootstrap?</a></div>
               <div><a href='#'>What is Bootstrap?</a></div>
@@ -142,8 +123,9 @@ const Frontend = () => {
         </div>
       </div>
       <div>
-      {showPopup && <PopupPage />}
       </div>
+      <PopupPage selectedTopic={selectedTopic} onClose={handleCloseTopic} open={isPopupOpen} />
+
     </div>
   );
 }

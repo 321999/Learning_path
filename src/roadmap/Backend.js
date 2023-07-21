@@ -2,149 +2,168 @@ import React, { useState } from 'react';
 import '../Style/Backend.css'
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import PopupPage from './PopupPage';
+import topicsInfo from '../data/topicsInfo.json';
+
 
 
 const Backend = () => {
-    const [showPopup, setShowPopup] = useState(false);
+  const [selectedTopic, setSelectedTopic] = useState(null);
+    const [isPopupOpen, setIsPopupOpen] = useState(false);
   
-    const togglePopup = () => {
-      setShowPopup(!showPopup);
+    const showInfo = (topicName) => {
+      setSelectedTopic(topicsInfo[topicName]);
+      setIsPopupOpen(true); // Set isPopupOpen to true to open the popup
+    };
+  
+    const handleCloseTopic = () => {
+      setIsPopupOpen(false); // Set isPopupOpen to false to close the popup
     };
   return (
-    <div>
+  <div>
          <div className="timeline1 mx-auto px-60 sm:px-70 bg-blue-100 py-8">  
            <h1 className="text-2xl mb-0.5 font-bold sm:mb-2 sm:text-4xl">Back-end Developer </h1>
            <p className="text-sm text-gray-500 sm:text-lg">Step by step guide to becoming a modern Back-end developer in 2023</p>
-  </div> 
+        </div> 
   <hr/>
-      <div className="timeline">
+  <div className="timeline">
         <div className="outer">
+
           <div className="card">
+          <div className="bcard1">
             <div className="info">
-            <h3 className="title font-bold">
-                <a href="#" onClick={togglePopup}>
-                  INTERNET
-                </a> <span style={{color:'green'}}><CheckCircleIcon/></span></h3> 
-             <div className='content'>
-             <div class="inline-content"><a href="#">How does the Internet work?</a></div>               
-              <div><a href='#'>What is HTTP?</a></div>
-              <div><a href='#'>Browsers and how they work?</a></div>
-              <div><a href='#'>DNS and how it works?</a></div> 
-              <div><a href='#'>What is hosting?</a> </div>
-             </div>
+            <button className="titl font-bold" onClick={() => showInfo('backend')} >Backend<span style={{ color: 'green', padding: '10px' }}><CheckCircleIcon /> </span> </button>        
+            </div>
             </div>
           </div>
-         
-          <div className="card">
-          <div  className='card1'>
+
+          <div className='card'>
+          <div className="bcard2">
             <div className="info">
-              <h3 className="title1 font-bold"><a href='#'>Project0</a><span style={{color:'green', padding:'10px'}}><CheckCircleIcon/></span></h3>
-              <div className='content1'>
-              <div><a href='#'>How does the Internet work?</a></div>
-              <div><a href='#'>What is HTTP?</a></div>
-             </div>
+            <button className="titl font-bold" onClick={() => showInfo('js')} >JS<span style={{ color: 'green', padding: '10px' }}><CheckCircleIcon /> </span> </button>        
             </div>
             </div>
 
-            <div  className='card2'>
+            <div className="bcard3">
             <div className="info">
-              <h3 className="title font-bold"><a href='#'>HTML</a><span style={{color:'green', padding:'10px'}}><CheckCircleIcon/></span></h3>
-              <div className='content'>
-              <div><a href='#'>Learn the basics</a></div>
-              <div><a href='#'>Forms and Validations</a></div>
-              <div><a href='#'>Conventions and Best Practices</a></div>
-              <div><a href='#'>Accessibility</a></div> 
-              <div><a href='#'>SEO Basics</a> </div>
-             </div>
+            <button className="titl font-bold" onClick={() => showInfo('python')} >Python<span style={{ color: 'green', padding: '10px' }}><CheckCircleIcon /> </span> </button>        
             </div>
             </div>
+            <div class="bline1"></div>
+
+            <div className="bcard4">
+            <div className="info">
+            <button className="titl font-bold" onClick={() => showInfo('Java')} >JAVA<span style={{ color: 'green', padding: '10px' }}><CheckCircleIcon /></span> </button>        
+            </div>
+            </div>
+            <div className="bcard5">
+            <div className="info">
+            <button className="titl font-bold" onClick={() => showInfo('Go')} >GO<span style={{ color: 'green', padding: '10px' }}><CheckCircleIcon /></span> </button>        
+            </div>
+            </div>
+            <div class="bline2"></div>
+
+
+            <div  className='bcard6'>
+            <div className="info"> 
+            <button className="titl font-bold">Learn Language<span style={{ color: 'green', padding: '10px' }}><CheckCircleIcon /></span> </button>        
+            </div>
+            </div>
+
+            <div  className='bcard7'>
+            <div className="info"> 
+            <button className="titl font-bold">Repo Hosting<span style={{ color: 'green', padding: '10px' }}><CheckCircleIcon /></span> </button>        
+            </div>
+            </div>
+
+            <div className="bcard8">
+            <div className="info">
+            <button className="titl font-bold" onClick={() => showInfo('git/github')} >GITHUB<span style={{ color: 'green', padding: '10px' }}><CheckCircleIcon /></span> </button>        
+            </div>
+            </div>
+            <div class="bline3"></div>
+
+            <div className="bcard9">
+            <div className="info">
+            <button className="titl font-bold" onClick={() => showInfo('GitLab')} >GITLAB<span style={{ color: 'green', padding: '10px' }}><CheckCircleIcon /></span> </button>        
+            </div>
+            </div>
+            <div class="bline4"></div>
+
+            <div className="bcard10">
+            <div className="info">
+            <button className="titl font-bold" onClick={() => showInfo('Bitbucket')} >Bitbucket<span style={{ color: 'green', padding: '10px' }}><CheckCircleIcon /></span> </button>        
+            </div>
+            </div>
+            <div class="bline5"></div>
+
           </div>
         
-          <div className="card">
-          <div  className='card3'>
-            <div className="info"> 
-              <h3 className="title1 font-bold"><a href='#'>Project1</a><span style={{color:'green', padding:'10px'}}><CheckCircleIcon/></span></h3>
-              <div className='content1'>
-              <div><a href='#'>How does the Internet work?</a></div>
-              <div><a href='#'>What is HTTP?</a></div>
-             </div>
-            </div>
-            </div>
 
-          <div className="card4">
-            <div className="info">
-            <h3 className="title2 font-bold"><a href='#'>CSS</a><span style={{color:'green', padding:'10px'}}><CheckCircleIcon/></span></h3>
-            <div className='content'>
-              <div><a href='#'>Learn the basics</a></div>
-              <div><a href='#'>Making Layouts</a></div>
-              <div><a href='#'>Responsive design and Media Queries</a></div>
-              <div><a href='#'>Learn and Practice flex</a></div> 
-              <div><a href='#'>Learn CSS Grid</a> </div>
-             </div>
-             </div>
-            </div>
-          </div>
-
-         
 
           <div className="card">
-          <div  className='card5'>
+          <div  className='bcard11'>
             <div className="info"> 
-              <h3 className="title1 font-bold"><a href='#'>Project2</a><span style={{color:'green', padding:'10px'}}><CheckCircleIcon/></span></h3>
-              <div className='content1'>
-              <div><a href='#'>How does the Internet work?</a></div>
-              <div><a href='#'>What is HTTP?</a></div>
-             </div>
+            <button className="titl font-bold" onClick={() => showInfo('databases')} >Database<span style={{ color: 'green', padding: '10px' }}><CheckCircleIcon /> </span> </button>        
             </div>
             </div>
-          <div  className='card6'>
+            <div class="bline6"></div>
+            <div class="bline7"></div>
+
+
+            <div className="bcard12">
             <div className="info">
-            <h3 className="title font-bold"><a href='#'>JAVASCRIPT</a><span style={{color:'green', padding:'10px'}}><CheckCircleIcon/></span></h3>
-            <div className='content'>
-              <div><a href='#'>Syntax and Basic Constructs</a></div>
-              <div><a href='#'>Learn DOM Manipulation</a></div>
-              <div><a href='#'>Learn Fetch API / Ajax (XHR)</a></div>
-              <div><a href='#'>ES6+ and modular JavaScript</a></div> 
-              <div><a href='#'>JS Async</a> </div>
-             </div>
-
+            <button className="titl font-bold" onClick={() => showInfo('MONGOdB')} >MONGOdB<span style={{ color: 'green', padding: '10px' }}><CheckCircleIcon /> </span> </button>        
             </div>
             </div>
-          </div>
-
+            <div className="bcard13">
+            <div className="info">
+            <button className="titl font-bold" onClick={() => showInfo('MySQL')} >MySQL<span style={{ color: 'green', padding: '10px' }}><CheckCircleIcon /> </span> </button>        
+            </div>
+            </div>
+            <div className="bcard14">
+            <div className="info">
+            <button className="titl font-bold" onClick={() => showInfo('Oracle')} >Oracle<span style={{ color: 'green', padding: '10px' }}><CheckCircleIcon /> </span> </button>        
+            </div>
+            </div>
+            <div className="bcard15">
+            <div className="info">
+            <button className="titl font-bold" onClick={() => showInfo('PostgreSQL')} >PostgreSQL<span style={{ color: 'green', padding: '10px' }}><CheckCircleIcon /> </span> </button>        
+            </div>
+            </div>
+            <div  className='bcard16'>
+            <div className="info"> 
+            <button className="titl font-bold" onClick={() => showInfo('Testing')} >Testing<span style={{ color: 'green', padding: '10px' }}><CheckCircleIcon /> </span> </button>        
+            </div>
+            </div>
           
 
-
-          <div className="card">
-          <div  className='card7'>
-            <div className="info"> 
-              <h3 className="title1 font-bold"><a href='#'>Project3</a><span style={{color:'green', padding:'10px'}}><CheckCircleIcon/></span></h3>
-              <div className='content1'>
-              <div><a href='#'>How does the Internet work?</a></div>
-              <div><a href='#'>What is HTTP?</a></div>
-             </div>
-            </div>
-            </div>
-
-          <div className="card8">
+            <div className="bcard17">
             <div className="info">
-              <h3 className="title2 font-bold"><a href='#'>BOOTSTRAP</a><span style={{color:'green', padding:'10px'}}><CheckCircleIcon/></span></h3>
-              <div className='content'>
-              <div><a href='#'>What is Bootstrap?</a></div>
-              <div><a href='#'>What is Bootstrap?</a></div>
-              <div><a href='#'>import Bootstrap</a></div>
-              <div><a href='#'>Why Use Bootstrap?</a></div> 
-              <div><a href='#'>Bootstrap 5 Grid</a> </div>
-             </div>
-             </div>
+            <button className="titl font-bold" onClick={() => showInfo('Unit')} >Unit Testing<span style={{ color: 'green', padding: '10px' }}><CheckCircleIcon /> </span> </button>        
             </div>
-          </div>
-        </div>
-      </div>
-      <div>
-      {showPopup && <PopupPage />}
-      </div>
-    </div>
+            </div>
+            <div className="bcard18">
+            <div className="info">
+            <button className="titl font-bold" onClick={() => showInfo('Integration')} >Integration Testing<span style={{ color: 'green', padding: '10px' }}><CheckCircleIcon /> </span> </button>        
+            </div>
+            </div>
+
+            <div  className='bcard19'>
+            <div className="info"> 
+            <button className="titl font-bold" onClick={() => showInfo('Functional')} >Functional Testing<span style={{ color: 'green', padding: '10px' }}><CheckCircleIcon /> </span> </button>        
+            </div>
+            </div>
+            <div class="bline8"></div>
+            <div class="bline9"></div>
+            <div class="bline10"></div>
+
+            </div>      
+
+  </div>
+  </div>   
+  <PopupPage selectedTopic={selectedTopic} onClose={handleCloseTopic} open={isPopupOpen} />
+
+</div>
   );
 }
 
