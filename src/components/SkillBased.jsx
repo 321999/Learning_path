@@ -17,7 +17,8 @@ import img6 from '../assets/MD.jpg'
 
 const SkillBased = () => {
   return (
-   <div className='w-full py-[10rem] px-4 bg-white'>
+   <div className='w-full py-[5rem] px-4 bg-white'>
+     <h1 className=' drop-shadow-lg  text-shadow-xl md:text-5xl sm:text-4xl text-xl font-bold py-4 text-center mt-1 mb-12 pb-12'>Skill Baesd RoadMaps</h1>
 
         {/* <h1 className='text-2xl font-bold text-center py-12'>Role Based Roadmap</h1> */}
         <Swiper
@@ -25,9 +26,9 @@ const SkillBased = () => {
         modules={[Navigation, Pagination, Scrollbar, A11y]}
         spaceBetween={30}
         slidesPerView={4}
-        navigation
+        // navigation
         pagination={{ clickable: true }}
-        scrollbar={{ draggable: true }}
+        // scrollbar={{ draggable: true }}
         onSwiper={(swiper) => console.log(swiper)}
         onSlideChange={() => console.log('slide change')}
     >

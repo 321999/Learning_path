@@ -17,7 +17,7 @@ const Hero = () => {
           Fast, flexible to Archive Your 
         </p>
         <Typed
-        className='md:text-5xl sm:text-4xl text-xl font-bold md:pl-4 pl-2'
+        className='md:text-5xl sm:text-4xl text-xl font-bold md:pl-6 pl-2'
           strings={['Goal']}
           typeSpeed={120}
           backSpeed={140}
@@ -25,7 +25,7 @@ const Hero = () => {
         />
       </div>
       <p className='md:text-2xl text-xl font-bold text-gray-500'>Monitor your Goal For archiving  your Goal platforms.</p>
-      <button className='bg-[#00df9a] w-[200px] rounded-md font-medium my-6 mx-auto py-3 text-black'>Get Started</button>
+      <button className='transition ease-in-out bg-[#00df9a] w-[200px] rounded-md font-medium my-6 mx-auto py-3 text-black'>Get Started</button>
     </div>
   </div>
   )
