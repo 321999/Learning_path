@@ -1,9 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../Style/DevOps.css'
+import PopupPage from './PopupPage';
+import topicsInfo from '../data/topicsInfo.json';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 
 
 const DevOps = () => {
+  const [selectedTopic, setSelectedTopic] = useState(null);
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+
+  const showInfo = (topicName) => {
+    setSelectedTopic(topicsInfo[topicName]);
+    setIsPopupOpen(true); // Set isPopupOpen to true to open the popup
+  };
+
+  const handleCloseTopic = () => {
+    setIsPopupOpen(false); // Set isPopupOpen to false to close the popup
+  };
     
   return (
 <div>
@@ -21,66 +34,64 @@ const DevOps = () => {
             <h3 className="titl font-bold"><a href='#'>DevOps</a><span style={{color:'green', padding:'10px'}}><CheckCircleIcon/></span></h3>
             </div>
             </div>
-
-      
           </div>
 
           <div className='card'>
           <div className="dcard2">
             <div className="info">
-            <h3 className="font-bold"><a href='#'>Python</a><span style={{color:'green', padding:'10px'}}><CheckCircleIcon/></span></h3>
+            <button className="titl font-bold" onClick={() => showInfo('python')} >Python<span style={{ color: 'green', padding: '10px' }}><CheckCircleIcon /> </span> </button>        
             </div>
             </div>
 
             <div className="dcard3">
             <div className="info">
-            <h3 className="font-bold"><a href='#'>Node.js </a><span style={{color:'green', padding:'10px'}}><CheckCircleIcon/></span></h3>
+            <button className="titl font-bold" onClick={() => showInfo('js')} >JS<span style={{ color: 'green', padding: '10px' }}><CheckCircleIcon /> </span> </button>        
             </div>
             </div>
             <div class="dline1"></div>
 
             <div className="dcard4">
             <div className="info">
-            <h3 className="font-bold"><a href='#'>Ruby</a><span style={{color:'green', padding:'10px'}}><CheckCircleIcon/></span></h3>
+            <button className="titl font-bold" onClick={() => showInfo('Rust')} >Rust<span style={{ color: 'green', padding: '10px' }}><CheckCircleIcon /></span> </button>        
             </div>
             </div>
             <div className="dcard5">
             <div className="info">
-            <h3 className="font-bold"><a href='#'>Go </a><span style={{color:'green', padding:'10px'}}><CheckCircleIcon/></span></h3>
+            <button className="titl font-bold" onClick={() => showInfo('Go')} >GO<span style={{ color: 'green', padding: '10px' }}><CheckCircleIcon /></span> </button>        
             </div>
             </div>
             <div class="dline2"></div>
 
 
             <div  className='dcard6'>
-            <div className="info"> 
-              <h3 className="font-bold"><a href='#'>Learn a Programming Language</a><span style={{color:'green', padding:'10px'}}><CheckCircleIcon/></span></h3> 
-            </div>
+            <div className="info">
+            <button className="titl font-bold">Learn a Programming Language<span style={{ color: 'green', padding: '10px' }}><CheckCircleIcon /></span> </button>        
+             </div>
             </div>
 
             <div  className='dcard7'>
-            <div className="info"> 
-              <h3 className="font-bold"><a href='#'>Operating System</a><span style={{color:'green', padding:'10px'}}><CheckCircleIcon/></span></h3> 
-            </div>
+            <div className="info">
+            <button className="titl font-bold">Operating System<span style={{ color: 'green', padding: '10px' }}><CheckCircleIcon /></span> </button>        
+             </div>
             </div>
 
             <div className="dcard8">
             <div className="info">
-            <h3 className="font-bold"><a href='#'>Linux</a><span style={{color:'green', padding:'10px'}}><CheckCircleIcon/></span></h3>
+            <button className="titl font-bold" onClick={() => showInfo('Linux')} >Linux<span style={{ color: 'green', padding: '10px' }}><CheckCircleIcon /></span> </button>        
             </div>
             </div>
             <div class="dline3"></div>
 
             <div className="dcard9">
             <div className="info">
-            <h3 className="font-bold"><a href='#'>Unix</a><span style={{color:'green', padding:'10px'}}><CheckCircleIcon/></span></h3>
+            <button className="titl font-bold" onClick={() => showInfo('Unix')} >Unix<span style={{ color: 'green', padding: '10px' }}><CheckCircleIcon /></span> </button>        
             </div>
             </div>
             <div class="dline4"></div>
 
             <div className="dcard10">
             <div className="info">
-            <h3 className="font-bold"><a href='#'>Windows</a><span style={{color:'green', padding:'10px'}}><CheckCircleIcon/></span></h3>
+            <button className="titl font-bold" onClick={() => showInfo('Windows')} >Windows<span style={{ color: 'green', padding: '10px' }}><CheckCircleIcon /></span> </button>        
             </div>
             </div>
             <div class="dline5"></div>
@@ -92,7 +103,7 @@ const DevOps = () => {
           <div className="card">
           <div  className='dcard11'>
             <div className="info"> 
-              <h3 className="font-bold"><a href='#'>Networking, Security and Protocols</a><span style={{color:'green', padding:'10px'}}><CheckCircleIcon/></span></h3> 
+            <button className="titl font-bold">Networking, Security and Protocols<span style={{ color: 'green', padding: '10px' }}><CheckCircleIcon /></span> </button>        
             </div>
             </div>
             <div class="dline6"></div>
@@ -101,51 +112,51 @@ const DevOps = () => {
 
             <div className="dcard12">
             <div className="info">
-            <h3 className="font-bold"><a href='#'>HTTP</a><span style={{color:'green', padding:'10px'}}><CheckCircleIcon/></span></h3>
+            <button className="titl font-bold" onClick={() => showInfo('HTTP')} >HTTP<span style={{ color: 'green', padding: '10px' }}><CheckCircleIcon /></span> </button>        
             </div>
             </div>
             <div className="dcard13">
             <div className="info">
-            <h3 className="font-bold"><a href='#'>SSH</a><span style={{color:'green', padding:'10px'}}><CheckCircleIcon/></span></h3>
+            <button className="titl font-bold" onClick={() => showInfo('SSH')} >SSH<span style={{ color: 'green', padding: '10px' }}><CheckCircleIcon /></span> </button>        
             </div>
             </div>
             <div className="dcard14">
             <div className="info">
-            <h3 className="font-bold"><a href='#'>HTTPS</a><span style={{color:'green', padding:'10px'}}><CheckCircleIcon/></span></h3>
+            <button className="titl font-bold" onClick={() => showInfo('HTTPS')} >HTTPS<span style={{ color: 'green', padding: '10px' }}><CheckCircleIcon /></span> </button>        
             </div>
             </div>
             <div className="dcard15">
             <div className="info">
-            <h3 className="font-bold"><a href='#'>SSL</a><span style={{color:'green', padding:'10px'}}><CheckCircleIcon/></span></h3>
+            <button className="titl font-bold" onClick={() => showInfo('SSL')} >SSL<span style={{ color: 'green', padding: '10px' }}><CheckCircleIcon /></span> </button>        
             </div>
             </div>
             <div  className='dcard16'>
-            <div className="info"> 
-              <h3 className="font-bold"><a href='#'>Containers</a><span style={{color:'green', padding:'10px'}}><CheckCircleIcon/></span></h3> 
-            </div>
+            <div className="info">
+            <button className="titl font-bold" onClick={() => showInfo('Containers')} >Containers<span style={{ color: 'green', padding: '10px' }}><CheckCircleIcon /></span> </button>        
+             </div>
             </div>
             <div class="dline8"></div>
 
             <div className="dcard17">
             <div className="info">
-            <h3 className="font-bold"><a href='#'>LXC</a><span style={{color:'green', padding:'10px'}}><CheckCircleIcon/></span></h3>
+            <button className="titl font-bold" onClick={() => showInfo('LXC')} >LXC<span style={{ color: 'green', padding: '10px' }}><CheckCircleIcon /></span> </button>        
             </div>
             </div>
             <div className="dcard18">
             <div className="info">
-            <h3 className="font-bold"><a href='#'>Docker</a><span style={{color:'green', padding:'10px'}}><CheckCircleIcon/></span></h3>
+            <button className="titl font-bold" onClick={() => showInfo('Docker')} >Docker<span style={{ color: 'green', padding: '10px' }}><CheckCircleIcon /></span> </button>        
             </div>
             </div>
 
             <div  className='dcard19'>
             <div className="info"> 
-              <h3 className="font-bold"><a href='#'>Infrastructure Provisioning</a><span style={{color:'green', padding:'10px'}}><CheckCircleIcon/></span></h3> 
+            <button className="titl font-bold" onClick={() => showInfo('Infrastructure')} >Infrastructure Management<span style={{ color: 'green', padding: '10px' }}><CheckCircleIcon /></span> </button>        
             </div>
             </div>
             <div  className='dcard20'>
-            <div className="info"> 
-              <h3 className="font-bold"><a href='#'>Configuration Management</a><span style={{color:'green', padding:'10px'}}><CheckCircleIcon/></span></h3> 
-            </div>
+            <div className="info">
+            <button className="titl font-bold" onClick={() => showInfo('Configuration')} >Configuration Management<span style={{ color: 'green', padding: '10px' }}><CheckCircleIcon /></span> </button>        
+             </div>
             </div>
            
 
@@ -153,29 +164,29 @@ const DevOps = () => {
 
           <div className='card'>
           <div  className='dcard21'>
-            <div className="info"> 
-              <h3 className="font-bold"><a href='#'>Container Orchestration</a><span style={{color:'green', padding:'10px'}}><CheckCircleIcon/></span></h3> 
-            </div>
+            <div className="info">
+            <button className="titl font-bold" onClick={() => showInfo('Container')} >Container Orchestration<span style={{ color: 'green', padding: '10px' }}><CheckCircleIcon /></span> </button>        
+             </div>
             </div>
             <div  className='dcard22'>
             <div className="info"> 
-              <h3 className="font-bold"><a href='#'>VCS Hosting</a><span style={{color:'green', padding:'10px'}}><CheckCircleIcon/></span></h3> 
+            <button className="titl font-bold" onClick={() => showInfo('VCS')} >VCS Hosting <span style={{ color: 'green', padding: '10px' }}><CheckCircleIcon /></span> </button>        
             </div>
             </div>
             <div  className='dcard23'>
             <div className="info"> 
-              <h3 className="font-bold"><a href='#'>GitHub</a><span style={{color:'green', padding:'10px'}}><CheckCircleIcon/></span></h3> 
+            <button className="titl font-bold" onClick={() => showInfo('git/github')} >GitHub<span style={{ color: 'green', padding: '10px' }}><CheckCircleIcon /></span> </button>        
             </div>
             </div>
             <div  className='dcard24'>
-            <div className="info"> 
-              <h3 className="font-bold"><a href='#'>GitLab</a><span style={{color:'green', padding:'10px'}}><CheckCircleIcon/></span></h3> 
-            </div>
+            <div className="info">
+            <button className="titl font-bold" onClick={() => showInfo('GitLab')} >GitLab<span style={{ color: 'green', padding: '10px' }}><CheckCircleIcon /></span> </button>        
+             </div>
             </div>
             <div  className='dcard25'>
-            <div className="info"> 
-              <h3 className="font-bold"><a href='#'>Bitbucket</a><span style={{color:'green', padding:'10px'}}><CheckCircleIcon/></span></h3> 
-            </div>
+            <div className="info">
+            <button className="titl font-bold" onClick={() => showInfo('Bitbucket')} >Bitbucket<span style={{ color: 'green', padding: '10px' }}><CheckCircleIcon /></span> </button>        
+             </div>
             </div>
             <div class="dline9"></div>
             <div class="dline10"></div>
@@ -185,22 +196,22 @@ const DevOps = () => {
           <div className='card'>
            <div  className='dcard26'>
             <div className="info"> 
-              <h3 className="font-bold"><a href='#'>Application Monitoring</a><span style={{color:'green', padding:'10px'}}><CheckCircleIcon/></span></h3> 
+            <button className="titl font-bold">Application Monitoring<span style={{ color: 'green', padding: '10px' }}><CheckCircleIcon /></span> </button>        
             </div>
             </div>
             <div  className='dcard27'>
             <div className="info"> 
-              <h3 className="font-bold"><a href='#'>AppDynamics</a><span style={{color:'green', padding:'10px'}}><CheckCircleIcon/></span></h3> 
+            <button className="titl font-bold" onClick={() => showInfo('AppDynamics')} >AppDynamics<span style={{ color: 'green', padding: '10px' }}><CheckCircleIcon /></span> </button>        
             </div>
             </div>
             <div  className='dcard28'>
             <div className="info"> 
-              <h3 className="font-bold"><a href='#'>Datadog</a><span style={{color:'green', padding:'10px'}}><CheckCircleIcon/></span></h3> 
+            <button className="titl font-bold" onClick={() => showInfo('Datadog')} >Datadog<span style={{ color: 'green', padding: '10px' }}><CheckCircleIcon /></span> </button>        
             </div>
             </div>
             <div  className='dcard29'>
             <div className="info"> 
-              <h3 className="font-bold"><a href='#'>OpenTelemetry</a><span style={{color:'green', padding:'10px'}}><CheckCircleIcon/></span></h3> 
+            <button className="titl font-bold" onClick={() => showInfo('OpenTelemetry')} >OpenTelemetry<span style={{ color: 'green', padding: '10px' }}><CheckCircleIcon /></span> </button>        
             </div>
             </div>
             <div class="dline12"></div>
@@ -209,46 +220,47 @@ const DevOps = () => {
 
             <div  className='dcard30'>
             <div className="info"> 
-              <h3 className="font-bold"><a href='#'>Infrastructure Monitoring</a><span style={{color:'green', padding:'10px'}}><CheckCircleIcon/></span></h3> 
+            <button className="titl font-bold" >Infrastructure Monitoring<span style={{ color: 'green', padding: '10px' }}><CheckCircleIcon /></span> </button>        
             </div>
             </div>
 
             <div  className='dcard31'>
-            <div className="info"> 
-              <h3 className="font-bold"><a href='#'>Prometheus</a><span style={{color:'green', padding:'10px'}}><CheckCircleIcon/></span></h3> 
-            </div>
+            <div className="info">
+            <button className="titl font-bold" onClick={() => showInfo('Prometheus')} >Prometheus<span style={{ color: 'green', padding: '10px' }}><CheckCircleIcon /></span> </button>        
+             </div>
             </div>
             <div  className='dcard32'>
-            <div className="info"> 
-              <h3 className="font-bold"><a href='#'>Zabbix</a><span style={{color:'green', padding:'10px'}}><CheckCircleIcon/></span></h3> 
-            </div>
+            <div className="info">
+            <button className="titl font-bold" onClick={() => showInfo('Zabbix')} >Zabbix<span style={{ color: 'green', padding: '10px' }}><CheckCircleIcon /></span> </button>        
+             </div>
             </div>
             <div class="dline15"></div>
             <div class="dline16"></div>
 
             <div  className='dcard33'>
             <div className="info"> 
-              <h3 className="font-bold"><a href='#'>Cloud Providers</a><span style={{color:'green', padding:'10px'}}><CheckCircleIcon/></span></h3> 
+            <button className="titl font-bold">Cloud Providers<span style={{ color: 'green', padding: '10px' }}><CheckCircleIcon /></span> </button>        
             </div>
             </div>
             <div  className='dcard34'>
             <div className="info"> 
-              <h3 className="font-bold"><a href='#'>AWS</a><span style={{color:'green', padding:'10px'}}><CheckCircleIcon/></span></h3> 
+            <button className="titl font-bold" onClick={() => showInfo('AWS')} >AWS<span style={{ color: 'green', padding: '10px' }}><CheckCircleIcon /></span> </button>        
             </div>
             </div>
             <div  className='dcard35'>
-            <div className="info"> 
-              <h3 className="font-bold"><a href='#'>Azure</a><span style={{color:'green', padding:'10px'}}><CheckCircleIcon/></span></h3> 
-            </div>
+            <div className="info">
+            <button className="titl font-bold" onClick={() => showInfo('Azure')} >Azure<span style={{ color: 'green', padding: '10px' }}><CheckCircleIcon /></span> </button>        
+             </div>
             </div>
             <div class="dline17"></div>
             <div class="dline18"></div>
           </div>
-  
-       
+        
            
 </div>
 </div>
+<PopupPage selectedTopic={selectedTopic} onClose={handleCloseTopic} open={isPopupOpen} />
+
 </div>
 
   );
