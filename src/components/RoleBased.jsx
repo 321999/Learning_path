@@ -9,7 +9,7 @@ import 'swiper/css/scrollbar';
 import Single from '../assets/front_End.jpg'
 import Double from '../assets/Back_End.jpg'
 import Triple from '../assets/full-stack developer.jpg'
-import Four from '../assets/Data-analysis.jpg'
+import Four from '../assets/imgdev.jpg'
 import five from '../assets/2807756_18131.jpg'
 import six from '../assets/maching-learning.jpg'
 
