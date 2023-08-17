@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import { Link } from 'react-router-dom'; // Import Link
+// import 
 
   const Navbar = () => {
     const [nav, setNav] = useState(false);
@@ -12,8 +13,18 @@ import { Link } from 'react-router-dom'; // Import Link
     <div className='flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 text-white'>
       <Link to='/' className='w-full text-3xl font-bold text-[#00df9a]'>LEARNING PATH.</Link>
       <ul className='hidden md:flex'>
-        <a href='/' className='p-7'>Home </a>
-        <a href='/roadmaps' className='p-7'> Roadmaps </a>
+        <Link to='/Home' className='p-7'>Home </Link>
+{/* 
+        <select>
+            Roadmap
+        <Link to='/roadmaps' className='p-7'> Roadmaps </Link> 
+            <option> 
+        <Link to='/roadmaps' className='p-7'> Roadmaps </Link>
+            </option>
+
+        </select> */}
+
+        <Link to='/roadmaps' className='p-7'> Roadmaps </Link>
         <a href='/about' className='p-7'>About </a>
         <a href='/contact' className='p-7'>Contact </a>
         <a href='/login'>
