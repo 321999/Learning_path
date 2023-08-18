@@ -39,10 +39,10 @@ function App() {
           <Route path="/about" element={<Raam/>}></Route>
           <Route path="/field" element={<Raam/>}></Route>
           <Route path="/Home" element={<Home/>}></Route>
-          
+
+          <Route path="/Home/Hero" element={<Hero/>}></Route>
+
           <Route path='/' element={<Home/>}></Route>
-
-
           </Routes>
       {/* </BrowserRouter> */}
 

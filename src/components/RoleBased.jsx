@@ -13,12 +13,11 @@ import Four from '../assets/Data-analysis.jpg'
 import five from '../assets/2807756_18131.jpg'
 import six from '../assets/maching-learning.jpg'
 
-
 const RoleBased = () => {
   return (
     
     <div className='w-full py-[5rem] px-2 bg-white '>
-      <h1 className=' drop-shadow-lg  md:text-5xl sm:text-4xl text-xl font-bold py-4 text-center mt-1 mb-12 pb-12 '>Role Baesd RoadMaps</h1>
+      <h1 className=' drop-shadow-lg  md:text-5xl sm:text-4xl text-xl font-bold py-4 text-center mt-1 mb-12 pb-12 '>Role Based RoadMaps</h1>
     <Swiper
     // install Swiper modules
     modules={[Navigation, Pagination, Scrollbar, A11y]}
@@ -29,7 +28,7 @@ const RoleBased = () => {
     // scrollbar={{ draggable: true }}shadow-inner
     onSwiper={(swiper) => console.log(swiper)}
     onSlideChange={() => console.log('slide change')}
-  >
+  >            
     <SwiperSlide> 
        <div className='w-full  hover:bg-gray-200 shadow-2xl drop-shadow-2xl flex flex-col p-4 my-8 rounded-lg hover:scale-105 duration-300'>
        <img className=' w-30 mx-auto mt-[-3rem]' src={Single} alt="/" />

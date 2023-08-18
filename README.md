@@ -25,4 +25,17 @@ Provide detailed and understandable documentation for the backend API, detailing
 Users of this straightforward Learning Path app can explore structured learning paths, adhere to thorough road maps, and access resources to improve their learning journey. For authorized users to create and manage learning paths and roadmaps, the backend includes an admin dashboard. Once the core functionalities are in place, additional features, such as user profiles, community interaction, or gamification components, can be added as upgrades.
 
 
+to run the project on github 
+
+# 👇 check your package.json for dependency updates
+npx npm-check-updates
+
+# 👇 write newer version in package.json
+npx npm-check-updates -u
+
+# 👇 install the latest version
+npm install
+
+# if u get error in above 
+npm install --force
 

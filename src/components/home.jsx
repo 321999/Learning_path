@@ -13,6 +13,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import DevOps from '../roadmap/DevOps';
 import Raam from './raam';
 // import Home from "./compo
+import PopupPage from "../Description/PopupPage"
 
 function Home() {
   return (
@@ -20,21 +21,22 @@ function Home() {
       {/* <BrowserRouter>  isko uncomment hona chahiye  isko comment hona hua then only u can  */}
       {/* <DevOps/> */}
         {/* <Navbar/> */}
+        {/* <PopupPage/> */}
 
         <Hero/>
-        <RoleBased/>
+        <RoleBased/> 
         <Newsletter />
         <SkillBased/>
         <Footer/>
         {/* <Raam/> */}
-        <Routes>
-          <Route path="/Hero" element={<Hero/>}></Route>
+        {/* <Routes> */}
+          {/* <Route path="/Home/Hero" element={<Hero/>}></Route>
           <Route path="/roadmaps" element={<DevOps/>}></Route>
           <Route path="/about" element={<Raam/>}></Route>
           <Route path="/field" element={<Raam/>}></Route>
-          {/* <Route path='/Home' element={<Home/>}></Route> */}
+          <Route path='/Home' element={<Home/>}></Route>
 
-          </Routes>
+          </Routes> */}
       {/* </BrowserRouter> */}
 
       {/* instead of hell use checkcircle   <CheckCircleIcon/> */}
@@ -43,3 +45,6 @@ function Home() {
 }
 
 export default Home;
+   
+
+
